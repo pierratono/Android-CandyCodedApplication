@@ -33,7 +33,9 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toRightOf="@+id/image_view_map"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_view_candy_store" />
+        app:layout_constraintTop_toBottomOf="@+id/image_view_candy_store"
+        android:clickable="true"
+        android:onClick="createMapIntent"/>
 
     <TextView
         android:id="@+id/text_view_phone"
@@ -95,7 +97,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_view_candy_store"
         app:srcCompat="@android:drawable/ic_dialog_map"
-        android:clickable="true"
-        android:onClick="createMapIntent"/>
+       />
 
 </android.support.constraint.ConstraintLayout>
